@@ -5,56 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GEP Personal Portfolio</title>
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <h1>G. Eric Plum</h1>
+    <div class = "wrapper">
+    <h1 class = "main__title">G. Eric Plum</h1>
 
-  <section>  <h2>About Me</h2>
+    <nav class="menu">
+        <ul>
+          <li class = "menu"><a href="#about">About Me</a></li>
+          <li class = "menu"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
 
-    <ul>
-        <li>Javascript Developer</li>
-        <li>Biochemist</li>
+  <section id = "about" class = "about-me">
+      
+    <h2 class = "about-me-title">About Me</h2>
+
+    <ulclass = "about-me__list"></ulclass>
+        <li class = "about-me__item">Javascript Developer</li>
+        <li class = "about-me__item">Biochemist</li>
     </ul>
-    <img src = "C:\Users\GEP\My Documents\code\eplum.github.io\IMG_5139.jpg" >
+
+    <figure class = "about-me__photo">
+        <img src = "C:\Users\plumg\Documents\code\eplum.github.io\IMG_5139.jpg" alt = "A guy and his dog.">
+
+        <figcaption>
+            A guy and his dog.
+        </figcaption>
+    </figure>
 </section>
-<section>
-    <h2>Contact Information</h2>
-    <a href="mailto:plumge@gmail.com">plumge@gmail.com</a>
+
+<section id = "contact" class = "contact-info">
+    <h2 class = "contact-info__title">Contact Information</h2>
+    <ul class = "contact-info__list">
+       <li> <a class = "contact-info__list__link" href="mailto:plumge@gmail.com">plumge@gmail.com</a></li>
+       <li> <a class = "contact-info__list__link">linkedin</a></li>
+       <li> <a class = "contact-info__list__link" href = "https://github.com/eplum">GitHub</a></li>
+    </ul>
 </section>
-<section>
-    
-<p>linkedin</p>
-<a href = "https://github.com/eplum">GitHub</a>
-</section>
-<section>
-    <h2>Skills</h2>
-    <ul>
-        <li>Javascript</li>
-        <li>Technical Writing</li>
-        <li>Federal Research Grant Applications</li>
-        <li>Nucleic Acid Physical Chemistry</li>
-        <li>Calorimetry</li>
-        <li>Spectroscopy</li>
+
+
+<section class = "skills">
+    <h2 class= "skills_title">Skills</h2>
+    <ul class = "skills__list">
+        <li class = "skills__list__item">Javascript</li>
+        <li class = "skills__list__item">Technical Writing</li>
+        <li class = "skills__list__item">Federal Research Grant Applications</li>
+        <li class = "skills__list__item">Nucleic Acid Physical Chemistry</li>
+        <li class = "skills__list__item">Thermodynamics</li>
+        <li class = "skills__list__item">Calorimetry</li>
+        <li class = "skills__list__item">Spectroscopy</li>
     </ul>
 </section> 
-<section> 
-<h2>Projects</h2>  
-<ul>
-    <article>
-        <li>Virtual Pets</li>
-        <p>  screen shot</p> 
-        <p> skills</p> 
+<section class = "projects"> 
+
+<h2 class = "projects__title">Projects</h2>  
+
+<ul class = "projects__list">
+    <article class = "projects__article">
+        <li> <a class = "projects__list__item" href ="https://github.com/WeCanCodeIT/virtual-pet-aero.git">Virtual Pets</a></li>
+        <li class = "projects__list__item">screen shot</li> 
+        <li class = "projects__list__item">skills</li> 
     </article>
-    <article>
-        <li>High Street hospital</li>
-        <p> screen shot</p> 
-        <p> skills</p> 
+</ul>
+<ul class = "projects__list"></ul>
+    <article class = "projects__article">
+            <li> <a class = "projects__list__item" href ="https://github.com/WeCanCodeIT/high-street-hospital-eric-cristina.git">High Street Hospital</a></li>
+            <li class = "projects__list__item">screen shot</li> 
+            <li class = "projects__list__item">skills</li> 
     </article>
     </ul>
 </section> 
 
 <footer>
-Footer
+    <small class = "footer-text"> &; G. Eric Plum - 2019</small>
 </footer>
+
+</div>
 </body>
 </html>
