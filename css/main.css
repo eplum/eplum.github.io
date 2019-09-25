@@ -22,17 +22,32 @@ img {
 ul {
     list-style: none;
 }
+ 
 
-.main__title, .about-me-title ,.about-me__list__item, .contact-info__title, .my-skills_title, .projects__title{
+.main__title, .about-me__title, .contact-info__title, .my-skills__title, .my-projects__title {
     background-color: #66B9Bf; /*powder*/
     color: seashell;
-    padding: 1rem 2rem; 
+    padding: 0.5rem 1rem; 
 }
 
-.my-skills__list, .my-skills__list__item, .about-me__list, .about-me__list__item, .projects__article, .projects__list, .projects__list__item {
+ /* .menu{
+    background-color:#E0889B; /*teal*/
+ }  */
+ 
+.menu, .menu__list, .menu__list__item { 
+    background-color:#E0889B; /*teal*/
+    color:  seashell;
+    padding: 1rem 1rem;  
+} 
+
+ .my-projects{
+    background-color:#E0889B; /*teal*/
+} 
+
+ .my-skills__list, .my-skills__list__item, .about-me__list, .about-me__list__item, .my-projects__article, .my-projects__list, .my-projects__list__item{
     background-color:#E0889B; /*teal*/
     color: seashell;
-    padding: 0.5rem 1rem;
+     padding: 0.5rem 1rem;
 }
 .wrapper {
     margin: 0 auto;
