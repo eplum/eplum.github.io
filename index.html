@@ -6,27 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GEP Personal Portfolio</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Kreon&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class = "wrapper">
     <h1 class = "main__title">G. Eric Plum</h1>
 
-    <nav class = menu >
-        <ul class = "menu__list">
-          <li><a class = "menu__list__item" href="#about">About Me</a></li>
-          <li><a class = "menu__list__item" href="#contact">Contact</a></li>
-          <li><a class = "menu__list__item" href="#skills">Skills</a></li>
-          <li><a class = "menu__list__item" href="#projects">Projects</a></li>
+    <nav class = my-menu >
+        <ul class = "my-menu__list">
+          <li><a class = "my-menu__list__item" href="#about">About Me</a></li>
+          <li><a class = "my-menu__list__item" href="#contact">Contact</a></li>
+          <li><a class = "my-menu__list__item" href="#skills">Skills</a></li>
+          <li><a class = "my-menu__list__item" href="#projects">Projects</a></li>
         </ul>
     </nav>
 
   <section id = "about" class = "about-me">
       
     <h2 class = "about-me__title">About Me</h2>
-
+<div class = about-me-container>
     <ul class = "about-me__list">
-        <li class = "about-me__list__item">Javascript Developer</li>
-        <li class = "about-me__list__item">Biochemist</li>
+        <li class = "about-me__list__item">Javascript Developer: I am currently studying full-stack Javascript development at We Can Code IT in Columbus,OH.</li>
+        <li class = "about-me__list__item">Biochemist: After earning a Ph.D. in Biochemistry from the University of Minnesota, I conducted research in Nucleic Acid Thermodynamics. Subsequently, I cofounded and lead a company, IBET, Inc., dedicated to research and development of novel instrumentation for Biophysics research.</li>
     </ul>
 
     <figure class = "about-me__photo">
@@ -36,13 +37,14 @@
            <! A guy and his dog.>
         </figcaption>
     </figure>
+</div>
 </section>
 
 <section id = "contact" class = "contact-info">
     <h2 class = "contact-info__title">Contact Information</h2>
     <ul class = "contact-info__list">
        <li> <a class = "contact-info__list__link" href="mailto:plumge@gmail.com">plumge@gmail.com</a></li>
-       <li> <a class = "contact-info__list__link">linkedin</a></li>
+       <li> <a class = "contact-info__list__link" href = "https://www.linkedin.com/">linkedin</a></li>
        <li> <a class = "contact-info__list__link" href = "https://github.com/eplum">GitHub</a></li>
     </ul>
 </section>
@@ -52,6 +54,7 @@
     <h2 class= "my-skills__title">Skills</h2>
     <ul class = "my-skills__list">
         <li class = "my-skills__list__item">Javascript</li>
+        <li class = "my-skills__list__item">LabView</li>
         <li class = "my-skills__list__item">Technical Writing</li>
         <li class = "my-skills__list__item">Federal Research Grant Applications</li>
         <li class = "my-skills__list__item">Nucleic Acid Physical Chemistry</li>
@@ -64,25 +67,47 @@
 <section id = "projects" class = "my-projects"> 
 
 <h2 class = "my-projects__title">Projects</h2>  
+<div class = my-projects__container>
+    <ul class = "my-projects__list">
+        <article class = "my-projects__article">
+            <li> <a class = "my-projects__list__item" href ="https://www.nytimes.com/">1 Project #1</a></li>
+            <li class = "my-projects__list__item">description</li> 
+            <li class = "my-projects__list__item">screen shot</li>
+            <li class = "my-projects__list__item">skills</li> 
+        </article>
+    </ul>
+
+    <ul class = "my-projects__list">
+        <article class = "my-projects__article">
+            <li> <a class = "my-projects__list__item" href ="https://www.nytimes.com/">2 Project #2</a></li>
+            <li class = "my-projects__list__item">description</li>
+            <li class = "my-projects__list__item">screen shot</li> 
+            <li class = "my-projects__list__item">skills</li> 
+        </article>
+    </ul>
 
 <ul class = "my-projects__list">
     <article class = "my-projects__article">
-        <li> <a class = "my-projects__list__item" href ="https://github.com/WeCanCodeIT/virtual-pet-aero.git">Virtual Pets</a></li>
-        <li class = "my-projects__list__item">screen shot</li> 
-        <li class = "my-projects__list__item">skills</li> 
-    </article>
-</ul>
-<ul class = "my-projects__list">
-    <article class = "my-projects__article">
-            <li> <a class = "my-projects__list__item" href ="https://github.com/WeCanCodeIT/high-street-hospital-eric-cristina.git">High Street Hospital</a></li>
+            <li> <a class = "my-projects__list__item" href ="https://github.com/WeCanCodeIT/high-street-hospital-eric-cristina.git">3 High Street Hospital</a></li>
+            <li class = "my-projects__list__item">description</li>
             <li class = "my-projects__list__item">screen shot</li> 
             <li class = "my-projects__list__item">skills</li> 
     </article>
 </ul>
+
+<ul class = "my-projects__list">
+    <article class = "my-projects__article">
+        <li> <a class = "my-projects__list__item" href ="https://github.com/WeCanCodeIT/virtual-pet-aero.git">4 Virtual Pets</a></li>
+        <li class = "my-projects__list__item">description</li>
+        <li class = "my-projects__list__item">screen shot</li> 
+        <li class = "my-projects__list__item">skills</li> 
+    </article>
+</ul>
+</div>
 </section> 
 
 <footer>
-    <small class = "footer-text"> &; G. Eric Plum - 2019</small>
+    <small class = "footer-text"> &copy; G. Eric Plum - 2019</small>
 </footer>
 
 </div>

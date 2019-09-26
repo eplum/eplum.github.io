@@ -1,56 +1,105 @@
-    /* color scheme */
-    /* #E37222; tangerine */
-    /* #E0889B; teal*/
-    /* #66B9BF; powder */
-    /* #EEAA7B; tan */
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color:  #EEAA7B; /*tan*/
+    background-color: var(--tan);
+    /* linear-gradient(173deg, rgb(102, 185, 191), rgb(238, 170, 123)) */
+    color: seashell;
+    font-family: 'Kreon', serif; 
+    width:100%;
 }
 
 
 html {
     font: 20px/1 sans-serif;
+
+    --powder: #66B9BF;      /* rgb(102,185,191) */
+    --tan: #EEAA7B;         /* rgb(238,170,123)*/
+    --tangerine:#E37222;    /* rgb(227,114,34) */
+    --teal:#E0889B;         /* rgb(102,185,191) */
+
+    background-color:var(--teal);
 }
 
 img {
-    width: 100%;
+    width: 30%;
+    padding: 2 rem;
 }
 
 ul {
     list-style: none;
 }
- 
+
+ a:link{
+    background-color: var(--teal);
+    padding: 0.5rem 1rem; 
+    display: inline-block; 
+    
+
+} 
+
+.about-me-container{
+
+    display:grid;
+    grid-template-columns:  auto auto;
+    
+}
+
+.about-me__list{
+
+    display:grid;
+    
+}
 
 .main__title, .about-me__title, .contact-info__title, .my-skills__title, .my-projects__title {
-    background-color: #66B9Bf; /*powder*/
-    color: seashell;
-    padding: 0.5rem 1rem; 
+    background-color:  var(--powder);
+    padding: 1rem 1rem; 
+    
 }
 
- /* .menu{
-    background-color:#E0889B; /*teal*/
- }  */
+.contact-info__list{
+    display:flex;
+    align-items: center; 
+    justify-content:center;
+}
  
-.menu, .menu__list, .menu__list__item { 
-    background-color:#E0889B; /*teal*/
-    color:  seashell;
-    padding: 1rem 1rem;  
+.my-menu, .my-menu__list, .my-menu__list__item,.contact-info__list, .contact-info__list__link { 
+    background-color: var(--teal);
+    width:100%;
+    padding: 0.5rem 0.5rem;   
 } 
 
- .my-projects{
-    background-color:#E0889B; /*teal*/
-} 
-
- .my-skills__list, .my-skills__list__item, .about-me__list, .about-me__list__item, .my-projects__article, .my-projects__list, .my-projects__list__item{
-    background-color:#E0889B; /*teal*/
-    color: seashell;
-     padding: 0.5rem 1rem;
+.my-menu__list{
+    display:flex;
+ 
 }
+
+.my-projects__list{
+    display:grid; 
+    border: 1px black solid;
+}
+ .my-projects__container{
+    background-color:var(--teal);
+     display:grid; 
+    grid-template-columns: 50% auto; 
+    
+
+ }
+ .my-skills__list, .my-skills__list__item, .about-me__list, .about-me__list__item, .my-projects__article, .my-projects__list, .my-projects__list__item{
+    background-color:var(--teal);
+    padding: 0.5rem 1rem;
+    width: 100%
+}
+
+.my-skills__list{
+
+display:grid;
+grid-template-columns: auto auto;
+}
+
 .wrapper {
     margin: 0 auto;
-    max-width: 30rem;
+    max-width: 60rem;
     width: 90%;
 } 
