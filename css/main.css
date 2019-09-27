@@ -3,9 +3,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: var(--tan);
-    /* linear-gradient(173deg, rgb(102, 185, 191), rgb(238, 170, 123)) */
-    color: seashell;
+    background-color: var(--tan); 
+    color:seashell;
     font-family: 'Kreon', serif; 
     width:100%;
 }
@@ -24,7 +23,7 @@ html {
 
 img {
     width: 100%;
-    padding: 2 rem;
+    padding: 1 rem;
     background-color:var(--teal);
 }
 
@@ -46,7 +45,7 @@ a:hover{
 .about-me-container{
 
     display:grid;
-    grid-template-columns:  85% auto;
+    grid-template-columns:  90% auto;
     
 }
 
@@ -76,25 +75,51 @@ justify-content:center;
  
 .my-menu, .my-menu__list, .my-menu__list__item,.contact-info__list, .contact-info__list__link { 
     background-color: var(--teal);
+    
     width:100%;
     padding: 0.5rem 0.5rem;   
 } 
 
 .my-menu__list{
     display:flex;
- 
+}
+
+.my-projects{
+    background-color:var(--powder);
+    
 }
 
 .my-projects__list{
     display:grid; 
-    border: 2px black solid;
+    border: 3px rgb(119, 0, 0) solid;
+    border-radius: 1rem; 
+    margin: 1 rem;
+    
 }
  .my-projects__container{
-    background-color:var(--teal);
-     display:grid; 
-    grid-template-columns: 50% auto; 
-    border: 2px black solid;
     
+    background-color:var(--powder); 
+    display:grid; 
+
+    grid-template-columns: 24.3rem 24.3rem; 
+    grid-template-rows: 15.3rem 15.3rem; 
+    
+    row-gap: 2rem;
+    column-gap: 1rem;  
+    align-content: space-around;
+    justify-content: space-around;   
+    padding: 1rem
+
+ }
+ .my-projects__article{
+    display:grid; 
+    grid-template-rows: 2rem 5rem 2 rem 9rem;  
+    
+ }
+ .project1__photo{
+  
+    width:40%;
+
 
  }
  .my-skills__list, .my-skills__list__item, .about-me__list, .about-me__list__item, .my-projects__article, .my-projects__list, .my-projects__list__item{
@@ -113,4 +138,5 @@ grid-template-columns: auto auto;
     margin: 0 auto;
     max-width: 60rem;
     width: 90%;
+    
 } 
