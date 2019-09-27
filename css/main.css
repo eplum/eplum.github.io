@@ -25,6 +25,7 @@ html {
 img {
     width: 100%;
     padding: 2 rem;
+    background-color:var(--teal);
 }
 
 ul {
@@ -45,7 +46,7 @@ a:hover{
 .about-me-container{
 
     display:grid;
-    grid-template-columns:  80% auto;
+    grid-template-columns:  85% auto;
     
 }
 
@@ -86,12 +87,13 @@ justify-content:center;
 
 .my-projects__list{
     display:grid; 
-    border: 1px black solid;
+    border: 2px black solid;
 }
  .my-projects__container{
     background-color:var(--teal);
      display:grid; 
     grid-template-columns: 50% auto; 
+    border: 2px black solid;
     
 
  }
