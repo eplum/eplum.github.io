@@ -23,7 +23,7 @@ html {
 }
 
 img {
-    width: 30%;
+    width: 100%;
     padding: 2 rem;
 }
 
@@ -35,14 +35,17 @@ ul {
     background-color: var(--teal);
     padding: 0.5rem 1rem; 
     display: inline-block; 
-    
-
+    text-decoration:none;
 } 
+a:hover{
+
+    color:var(--tan);
+}
 
 .about-me-container{
 
     display:grid;
-    grid-template-columns:  auto auto;
+    grid-template-columns:  80% auto;
     
 }
 
@@ -56,6 +59,12 @@ ul {
     background-color:  var(--powder);
     padding: 1rem 1rem; 
     
+}
+
+.main__title{
+display:flex;
+justify-content:center;
+
 }
 
 .contact-info__list{
