@@ -5,7 +5,8 @@
     padding: 0;
     opacity: 1.0;
 
-    color:seashell; 
+    color:white; 
+
     font-family: 'Kreon', serif; 
     width:100%;
 }
@@ -24,8 +25,6 @@ html {
     --shallow-text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777;
 
     background-image: url("https://github.com/eplum/eplum.github.io/blob/master/bglinesEP.png?raw=true");
-    
-   
     background-repeat: repeat repeat;
 
 }
@@ -66,10 +65,11 @@ a:hover{
 }
 
 .main__title, .about-me__title, .contact-info__title, .my-skills__title, .my-projects__title {
-    /* background-color:  var(--powder); */
-    background-image: url("https://github.com/eplum/eplum.github.io/blob/master/bglinesEP.png?raw=true");
+
     padding: 1rem 1rem; 
     text-shadow: var(--deep-text-shadow);
+    background-color:var(--powder);
+    opacity: 0.5;
 }
 
 .main__title{
