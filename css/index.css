@@ -1,25 +1,22 @@
 
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    opacity: 1.0;
-
     color:white; 
-
-    font-family: 'Kreon', serif; 
+    font-family: 'Kreon', serif;   
+    margin: 0;
+    opacity: 1.0;
+    padding: 0;
     width:100%;
 }
 
-
 html {
-    font: 20px/1 sans-serif;
+    font: 20px/1 serif;
 
     --powder: #66B9BF;      /* rgb(102,185,191) */
     --tan: #EEAA7B;         /* rgb(238,170,123)*/
-    --tangerine:#E37222;    /* rgb(227,114,34) */
     --teal:#E0889B;         /*rgb(102,185,191)*/
- 
+
+    --hover-color: var(--tan);
     --section-title-background: var(--powder);
     --section-body-background: var(--teal);
 
@@ -29,13 +26,12 @@ html {
 
     background-image: url("https://github.com/eplum/eplum.github.io/blob/master/bglinesEP.png?raw=true");
     background-repeat: repeat repeat;
-
 }
 
 img {
-    width: 100%;
-    padding: 1 rem;
     background-color:var(--section-body-background);
+    padding: 1 rem;
+    width: 100%;
 }
 
 ul {
@@ -44,133 +40,112 @@ ul {
 
  a:link{
     background-color: var(--section-body-background);
-    padding: 0.5rem 1rem; 
-    display: inline-block; 
+    display: inline-block;
+    padding: 0.5rem 1rem;  
     text-decoration:none;
 } 
-a:hover{
-                                      
-    color:var(--tan);
+
+a:hover{                                   
+    color:var(--hover-color);
 }
 
 .about-me-container{
-
     display:grid;
     grid-template-columns:  80% auto;
-
 }
-
 
 .about-me__list{
-
+    align-items: center;
     display:grid;
     text-shadow: var(--shallow-text-shadow);
-    align-items: center;
 }
 
-.main__title, .about-me__title, .contact-info__title, .my-skills__title, .my-projects__title {
+.about-me__list, .about-me__list__item, .skills__list, .skills__list__item {
+    background-color:var(--section-body-background);
+    opacity: 0.8;
+    padding: 0.5rem 1rem;
+    width: 100%
+}
 
-    padding: 1rem 1rem; 
-    text-shadow: var(--deep-text-shadow);
+.about-me__title, .contact-info__title, .main__title, .projects__title, .skills__title  {
     background-color:var(--section-title-background);
     opacity :0.8;
-}
-
-.main__title{
-display:flex;
-justify-content:center;
+    padding: 1rem 1rem; 
+    text-shadow: var(--deep-text-shadow);
 }
 
 .contact-info__list{
+    align-items: center;
     display:flex;
-    align-items: center; 
     justify-content: space-evenly;
 }
  
-.my-menu, .my-menu__list, .my-menu__list__item,.contact-info__list, .contact-info__list__link { 
+.contact-info__list, .contact-info__list__link, .my-menu, .my-menu__list, .my-menu__list__item{ 
     background-color: var(--section-body-background);
     opacity :0.8;
+    padding: 0.5rem 0.5rem;  
     text-shadow: var(--medium-text-shadow);
     width:100%;
-    padding: 0.5rem 0.5rem;   
 } 
+
+.main__title{
+    display:flex;
+    justify-content:center;
+}
 
 .my-menu__list{
     display:flex;
 }
 
-.my-projects{
+.projects{
     background-color:var(--section-title-background);
     opacity: 0.8;
 }
 
-.my-projects__list{
+.projects__article{
+    background-color:var(--section-title-background) !important;
     display:grid; 
+    grid-template-rows: 2rem 4rem 2rem 5rem;  
+    justify-items: center;
+    opacity: 0.8;
+    text-shadow: var(--medium-text-shadow);
+    width: 100%
+ }
+
+ .projects__container{
+    align-content: space-around;
+    background-color:var(--section-body-background); 
+    column-gap: 1rem;   
+    display:grid; 
+    grid-template-columns: 24.3rem 24.3rem; 
+    grid-template-rows: 15.3rem 15.3rem; 
+    justify-content: space-around; 
+    opacity :0.8; 
+    padding: 1rem;
+    row-gap: 2rem;
+ }
+
+.projects__list{
+    background-color:var(--section-title-background) !important;
     border: 10px rgb(119, 0, 0);
     border-radius: 1rem; 
     border-style: ridge; 
+    display:grid; 
     margin: 1 rem;
-    background-color:var(--section-title-background) !important;
-
-
 }
 
-.my-projects__list__item{
-
+.projects__list__item{
     background-color:var(--section-title-background) !important;
     display:grid;
     justify-items: center;
-}
-
- .my-projects__container{
-    
-    background-color:var(--section-body-background); 
-    opacity :0.8; 
-
-    display:grid; 
-
-    grid-template-columns: 24.3rem 24.3rem; 
-    grid-template-rows: 15.3rem 15.3rem; 
-    
-    row-gap: 2rem;
-    column-gap: 1rem;  
-    align-content: space-around;
-    justify-content: space-around;   
-    padding: 1rem
- 
- }
- .my-projects__article{
-    display:grid; 
-    
-    background-color:var(--section-title-background) !important;
-    opacity: 0.8;
-
-    /* grid-template-rows: 2rem 3rem 2rem 5rem;  
-    align-self: center; */
-
-    grid-template-rows: 2rem 4rem 2rem 5rem;  
-    justify-items: center;
-
-    text-shadow: var(--medium-text-shadow);
-    /* padding: 0.5rem 1rem; */
-    width: 100%
- }
- .project1__photo{
-
-    width:35%; 
-
-
- }
- .my-skills__list, .my-skills__list__item, .about-me__list, .about-me__list__item{
-    background-color:var(--section-body-background);
-    opacity: 0.8;
     padding: 0.5rem 1rem;
-    width: 100%
-   
 }
 
-.my-skills__list{
+ .project1__photo, .project2__photo, .project3__photo, .project4__photo{
+    width:35%; 
+ }
 
+.skills__list{
     display:grid;
     grid-template-columns: auto auto;
     text-shadow: var(--shallow-text-shadow);
