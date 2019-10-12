@@ -7,6 +7,8 @@
     opacity: 1.0;
     padding: 0;
     width:100%;
+    
+
 }
 
 html {
@@ -17,17 +19,25 @@ html {
     --teal:#E0889B;         /*rgb(102,185,191)*/
 
     --hover-color: var(--tan);
-    --section-title-background: var(--powder);
-    --section-body-background: var(--teal);
+    --section-title-background:transparent;  /*var(--powder);*/
+    --section-body-background:transparent; /*var(--teal);*/
 
-    --deep-text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333333;
+    --deep-text-shadow: 0px 1px 0px rgb(200, 200, 200), 0px 2px 0px rgb(150, 150, 150), 0px 3px 0px rgb(100, 100, 100), 0px 4px 0px rgb(50, 50, 50)6, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333333;
     --medium-text-shadow:0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666;
     --shallow-text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777;
 
-    background-image: url("https://github.com/eplum/eplum.github.io/blob/master/bglinesEP.png?raw=true");
-    background-repeat: repeat repeat;
+    /* background-image: url("https://github.com/eplum/eplum.github.io/blob/master/bglinesEP.png?raw=true");
+    background-repeat: repeat repeat; */
+    /* background-image: url("..\abstract-art-artistic-2495173.jpg");
+    background-size: auto auto; */
+     /* background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5));  */
+    /* background-image: url("../abstract-art-artistic-2495173.jpg"); 
+    background-size: contain; */
+    background-color: rgba(45, 45, 45, 0.9) !important;
+    background-image: url('../1tdz_screenshot.png');
+    /* background-size: auto auto; */
+    /* background-blend-mode: color; */
 }
-
 img {
     background-color:var(--section-body-background);
     padding: 1 rem;
@@ -61,15 +71,15 @@ a:hover{
 }
 
 .about-me__list, .about-me__list__item, .skills__list, .skills__list__item {
-    background-color:var(--section-body-background);
-    opacity: 0.8;
+    background-color:var(--section-body-background); 
+    /* opacity: 0.8; */
     padding: 0.5rem 1rem;
     width: 100%
 }
 
 .about-me__title, .contact-info__title, .main__title, .projects__title, .skills__title  {
     background-color:var(--section-title-background);
-    opacity :0.8;
+    /* opacity :0.8; */
     padding: 1rem 1rem; 
     text-shadow: var(--deep-text-shadow);
 }
@@ -82,7 +92,7 @@ a:hover{
  
 .contact-info__list, .contact-info__list__link, .my-menu, .my-menu__list, .my-menu__list__item{ 
     background-color: var(--section-body-background);
-    opacity :0.8;
+    /* opacity :0.8; */
     padding: 0.5rem 0.5rem;  
     text-shadow: var(--medium-text-shadow);
     width:100%;
@@ -99,7 +109,7 @@ a:hover{
 
 .projects{
     background-color:var(--section-title-background);
-    opacity: 0.8;
+    /* opacity: 0.8; */
 }
 
 .projects__article{
@@ -107,7 +117,7 @@ a:hover{
     display:grid; 
     grid-template-rows: 2rem 4rem 2rem 5rem;  
     justify-items: center;
-    opacity: 0.8;
+    /* opacity: 0.8; */
     text-shadow: var(--medium-text-shadow);
     width: 100%
  }
@@ -120,7 +130,7 @@ a:hover{
     grid-template-columns: 24.3rem 24.3rem; 
     grid-template-rows: 15.3rem 15.3rem; 
     justify-content: space-around; 
-    opacity :0.8; 
+    /* opacity :0.8;  */
     padding: 1rem;
     row-gap: 2rem;
  }
