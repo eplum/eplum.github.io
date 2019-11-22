@@ -19,12 +19,14 @@ html {
     --teal:#E0889B;         /*rgb(102,185,191)*/
 
     --hover-color: var(--tan);
-    --section-title-background:transparent;  /*var(--powder);*/
-    --section-body-background:transparent; /*var(--teal);*/
+    --section-title-background:transparent; /*var(--powder); */
+     --section-body-background:transparent;/*var(--teal); */
 
     --deep-text-shadow: 0px 1px 0px rgb(200, 200, 200), 0px 2px 0px rgb(150, 150, 150), 0px 3px 0px rgb(100, 100, 100), 0px 4px 0px rgb(50, 50, 50)6, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333333;
     --medium-text-shadow:0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666;
     --shallow-text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777;
+
+    --light-text-shadow: 0px 1px 0px #333333, 0px 2px 0px #444, 0px 3px 0px#555, 0px 4px 0px rgb(50, 50, 50)6, 0px 5px 0px  rgb(100, 100, 100), 0px 6px 0px rgb(150, 150, 150), 0px 7px 0px rgb(200, 200, 200);
 
     /* background-image: url("https://github.com/eplum/eplum.github.io/blob/master/bglinesEP.png?raw=true");
     background-repeat: repeat repeat; */
@@ -41,7 +43,7 @@ html {
 img {
     background-color:var(--section-body-background);
     padding: 1 rem;
-    width: 100%;
+    width: 50%;
 }
 
 ul {
@@ -60,34 +62,54 @@ a:hover{
 }
 
 .about-me-container{
+    /* display:flex;*/
+    /* justify-content: space-between; */
+    /* flex: auto; */
     display:grid;
-    grid-template-columns:  80% auto;
+    grid-template-columns: auto auto;
+    justify-content: center;
+
+    border: 10px rgb(119, 0, 0);
+    border-radius: 1rem; 
+    border-style: ridge;
+    
+    background-color:#999999; /*var(--section-body-background); */
+    opacity: 0.90; 
+    padding: 0.5rem 1rem;
 }
 
 .about-me__list{
     align-items: center;
     display:grid;
     text-shadow: var(--shallow-text-shadow);
+
 }
 
 .about-me__list, .about-me__list__item, .skills__list, .skills__list__item {
-    background-color:var(--section-body-background); 
-    /* opacity: 0.8; */
+    background-color:#999999; /*var(--section-body-background); */
+    opacity: 0.90; 
     padding: 0.5rem 1rem;
-    width: 100%
+    width: 100%;
 }
 
 .about-me__title, .contact-info__title, .main__title, .projects__title, .skills__title  {
-    background-color:var(--section-title-background);
-    /* opacity :0.8; */
+    background-color:var(--section-title-background); 
+    /* opacity :0.2;  */
     padding: 1rem 1rem; 
-    text-shadow: var(--deep-text-shadow);
+    text-shadow: var(--light-text-shadow);
+    display:flex;
+    justify-content:center;
 }
 
 .contact-info__list{
     align-items: center;
     display:flex;
     justify-content: space-evenly;
+
+    border: 10px rgb(119, 0, 0);
+    border-radius: 1rem; 
+    border-style: ridge;
+
 }
  
 .contact-info__list, .contact-info__list__link, .my-menu, .my-menu__list, .my-menu__list__item{ 
@@ -96,6 +118,10 @@ a:hover{
     padding: 0.5rem 0.5rem;  
     text-shadow: var(--medium-text-shadow);
     width:100%;
+    
+    background-color:#999999; /*var(--section-body-background); */
+    opacity: 0.90; 
+    padding: 0.5rem 1rem;
 } 
 
 .main__title{
@@ -103,6 +129,12 @@ a:hover{
     justify-content:center;
 }
 
+.my-menu{
+    border: 10px rgb(119, 0, 0);
+    border-radius: 1rem; 
+    border-style: ridge;
+
+}
 .my-menu__list{
     display:flex;
 }
@@ -113,26 +145,29 @@ a:hover{
 }
 
 .projects__article{
-    background-color:var(--section-title-background) !important;
+    background-color: #777777; /* var(--section-title-background) !important; */
     display:grid; 
     grid-template-rows: 2rem 4rem 2rem 5rem;  
     justify-items: center;
-    /* opacity: 0.8; */
+    opacity: 0.90; 
     text-shadow: var(--medium-text-shadow);
     width: 100%
  }
 
  .projects__container{
     align-content: space-around;
-    background-color:var(--section-body-background); 
+    background-color: #999999;/*var(--section-body-background); */
     column-gap: 1rem;   
     display:grid; 
     grid-template-columns: 24.3rem 24.3rem; 
     grid-template-rows: 15.3rem 15.3rem; 
     justify-content: space-around; 
-    /* opacity :0.8;  */
+    opacity :0.90;  
     padding: 1rem;
     row-gap: 2rem;
+    border: 10px rgb(119, 0, 0);
+    border-radius: 1rem; 
+    border-style: ridge; 
  }
 
 .projects__list{
@@ -159,6 +194,9 @@ a:hover{
     display:grid;
     grid-template-columns: auto auto;
     text-shadow: var(--shallow-text-shadow);
+    border: 10px rgb(119, 0, 0);
+    border-radius: 1rem; 
+    border-style: ridge; 
 }
 
 .wrapper {
